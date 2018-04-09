@@ -1,0 +1,65 @@
+{
+  "name": "egg-graphql-xsy",
+  "version": "1.0.0",
+  "description": "xsy graphql",
+  "eggPlugin": {
+    "name": "graphqlXsy"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "apollo-server-koa": "^1.2.0",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "graphql-tools": "^2.19.0",
+    "lodash": "4.17.4"
+  },
+  "devDependencies": {
+    "autod": "^2.9.0",
+    "dataloader": "^1.3.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.10.0",
+    "eslint": "^4.6.1",
+    "eslint-config-egg": "^5.1.1",
+    "mysql": "^2.12.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app",
+    "lib"
+  ],
+  "ci": {
+    "version": "8, 9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-graphql-xsy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-graphql-xsy#readme",
+  "author": "zimo",
+  "license": "MIT"
+}
