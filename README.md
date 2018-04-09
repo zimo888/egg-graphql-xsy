@@ -23,7 +23,7 @@
 <!--
 Description here.
 -->
-
+1. 支持了配置文件递归查找
 ## Install
 
 ```bash
